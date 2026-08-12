@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leigha Grimm — Product Leader, Health Tech</title>
+<meta name="description" content="Leigha Grimm — product leader in health tech with 13+ years of experience, from bedside nursing to executive product leadership building an enterprise value-based care platform.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- Social link preview (Open Graph / Twitter). NOTE: once this site is live on GitHub Pages
+     or a custom domain, replace the og:url / og:image / twitter:image values below with the
+     full absolute URL (e.g. https://leighagrimm.com/assets/og-image.png) -- most platforms
+     (LinkedIn, Slack, etc.) require an absolute URL to render the preview image correctly. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Leigha Grimm — Product Leader, Health Tech">
+<meta property="og:description" content="13+ years leading product in healthcare technology — from bedside nursing to owning strategy for an enterprise value-based care platform.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Leigha Grimm — Product Leader, Health Tech">
+<meta name="twitter:description" content="13+ years leading product in healthcare technology — from bedside nursing to owning strategy for an enterprise value-based care platform.">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14213D;
+    --body-text:#3B4757;
+    --paper:#F6F8F7;
+    --card:#FFFFFF;
+    --signal:#2F6F5E;
+    --signal-deep:#1B4436;
+    --accent-warm:#A97A3B;
+    --line:#DCE4E0;
+    --tag-bg:#E9F1EE;
+    --serif:'Spectral', Georgia, serif;
+    --sans:'IBM Plex Sans', -apple-system, sans-serif;
+    --mono:'IBM Plex Mono', 'Courier New', monospace;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+  body{background:var(--paper);color:var(--body-text);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  a{color:var(--signal);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--signal); outline-offset:3px;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px;}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(246,248,247,0.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .nav-name{font-family:var(--mono);font-size:13px;letter-spacing:0.04em;color:var(--ink);text-decoration:none;font-weight:500;display:flex;align-items:center;gap:8px;}
+  .nav-dot{width:7px;height:7px;border-radius:50%;background:var(--signal);display:inline-block;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--body-text);text-decoration:none;transition:color 0.15s;}
+  .nav-links a:hover{color:var(--signal);}
+  @media (max-width:640px){ .nav-links{gap:16px;} .nav-links a{font-size:11px;} }
+
+  /* HERO */
+  .hero{padding:88px 0 56px;}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--signal);margin-bottom:18px;display:block;}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,6vw,58px);color:var(--ink);line-height:1.08;letter-spacing:-0.01em;}
+  .hero-sub{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(18px,2.4vw,22px);color:var(--body-text);margin-top:14px;max-width:560px;}
+  .hero-desc{max-width:540px;margin-top:22px;font-size:16px;color:var(--body-text);}
+  .pulse-wrap{margin:38px 0 6px;width:100%;max-width:640px;}
+  .pulse-wrap svg{width:100%;height:auto;display:block;}
+  .pulse-path{fill:none;stroke:var(--signal);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 1.8s ease-out forwards 0.3s;}
+  @keyframes draw{ to{stroke-dashoffset:0;} }
+  .hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+  .btn{font-family:var(--mono);font-size:13px;letter-spacing:0.03em;padding:11px 20px;border-radius:2px;text-decoration:none;display:inline-block;transition:all 0.15s;}
+  .btn-primary{background:var(--ink);color:var(--paper);}
+  .btn-primary:hover{background:var(--signal-deep);}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--signal);color:var(--signal);}
+
+  /* SECTION SHARED */
+  section{padding:64px 0;border-top:1px solid var(--line);}
+  .section-head{display:flex;align-items:baseline;gap:16px;margin-bottom:36px;}
+  .section-num{font-family:var(--mono);font-size:12px;color:var(--accent-warm);}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(24px,3.4vw,30px);color:var(--ink);}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity 0.6s ease, transform 0.6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ABOUT */
+  .about-text{font-size:16.5px;max-width:640px;}
+  .about-text p + p{margin-top:16px;}
+  .about-text strong{color:var(--ink);font-weight:600;}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px;}
+  .stat{background:var(--card);padding:22px 18px;}
+  .stat-num{font-family:var(--mono);font-size:22px;color:var(--signal);font-weight:500;}
+  .stat-label{font-size:12.5px;color:var(--body-text);margin-top:6px;}
+  @media (max-width:640px){ .stats{grid-template-columns:repeat(2,1fr);} }
+
+  /* TIMELINE */
+  .timeline{position:relative;padding-left:28px;}
+  .timeline::before{content:'';position:absolute;left:4px;top:6px;bottom:6px;width:1px;background:var(--line);}
+  .tl-item{position:relative;padding-bottom:38px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{content:'';position:absolute;left:-28px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--signal);}
+  .tl-years{font-family:var(--mono);font-size:12px;color:var(--accent-warm);letter-spacing:0.03em;}
+  .tl-role{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--ink);margin-top:4px;}
+  .tl-org{font-size:14.5px;color:var(--body-text);margin-top:2px;}
+  .tl-desc{font-size:14.5px;margin-top:8px;max-width:560px;}
+  .tl-sub{margin-top:10px;padding-left:16px;border-left:2px solid var(--tag-bg);}
+  .tl-sub-role{font-size:13.5px;color:var(--body-text);}
+
+  /* CASE STUDIES */
+  .case-intro{font-size:15px;color:var(--body-text);max-width:640px;margin-top:-16px;margin-bottom:34px;}
+  .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media (max-width:900px){ .case-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .case-grid{grid-template-columns:1fr;} }
+  .case-card{background:var(--card);border:1px solid var(--line);padding:22px 20px;display:flex;flex-direction:column;gap:11px;}
+  .case-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--signal);background:var(--tag-bg);padding:4px 8px;border-radius:2px;align-self:flex-start;}
+  .case-title{font-family:var(--serif);font-weight:600;font-size:17.5px;color:var(--ink);}
+  .case-role{font-family:var(--mono);font-size:11px;color:var(--body-text);}
+  .case-desc{font-size:13.5px;}
+  .case-metrics{display:flex;gap:16px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line);flex-wrap:wrap;}
+  .case-metric-num{font-family:var(--mono);font-size:16px;color:var(--signal);font-weight:500;}
+  .case-metric-label{font-size:11px;color:var(--body-text);}
+
+  /* SKILLS */
+  .skill-groups{display:grid;grid-template-columns:1fr 1fr;gap:32px 40px;}
+  @media (max-width:640px){ .skill-groups{grid-template-columns:1fr;} }
+  .skill-group-title{font-family:var(--mono);font-size:12px;letter-spacing:0.05em;text-transform:uppercase;color:var(--accent-warm);margin-bottom:12px;}
+  .skill-tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .skill-tag{font-size:13px;background:var(--tag-bg);color:var(--signal-deep);padding:6px 12px;border-radius:2px;}
+
+  /* CONTACT */
+  .contact{text-align:left;}
+  .contact-line{font-family:var(--serif);font-size:clamp(22px,3vw,28px);color:var(--ink);max-width:600px;}
+  .contact-links{display:flex;gap:22px;margin-top:24px;flex-wrap:wrap;}
+  .contact-links a{font-family:var(--mono);font-size:13.5px;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;transition:border-color 0.15s, color 0.15s;}
+  .contact-links a:hover{border-color:var(--signal);}
+  footer{padding:32px 0 48px;}
+  footer p{font-family:var(--mono);font-size:11.5px;color:var(--body-text);opacity:0.7;}
+
+  /* COPY TOAST */
+  .copy-toast{
+    position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(8px);
+    background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:12.5px;
+    padding:11px 18px;border-radius:3px;opacity:0;pointer-events:none;
+    transition:opacity 0.25s ease, transform 0.25s ease;z-index:999;letter-spacing:0.02em;
+  }
+  .copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="nav-name"><span class="nav-dot"></span>LEIGHA GRIMM</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Case Studies</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- keep to 4 nav items for a clean header; Off Duty is discoverable by scrolling -->
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Product Leader · RN, MSN</span>
+    <h1>Leigha Grimm</h1>
+    <p class="hero-sub">Building clinical technology that care teams actually trust.</p>
+    <p class="hero-desc">13+ years leading product in healthcare technology — from bedside nursing to owning the strategy behind an enterprise value-based care platform. I build at the intersection of clinical reality, AI, and product craft.</p>
+    <div class="pulse-wrap" aria-hidden="true">
+      <svg viewBox="0 0 640 60" preserveAspectRatio="none">
+        <path class="pulse-path" d="M0,30 L35,30 Q45,22 55,30 L65,30 L70,35 L76,6 L82,40 L88,30 L100,30 Q115,18 130,30 L215,30 Q225,22 235,30 L245,30 L250,35 L256,6 L262,40 L268,30 L280,30 Q295,18 310,30 L395,30 Q405,22 415,30 L425,30 L430,35 L436,6 L442,40 L448,30 L460,30 Q475,18 490,30 L640,30" />
+      </svg>
+    </div>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">View case studies</a>
+      <a href="mailto:Leigha.Grimm@gmail.com" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-text reveal">
+      <p>Leigha spent seven years in critical care and pediatric emergency nursing before moving into clinical informatics and product — a path that shapes how she builds today: every product decision gets weighed against what actually happens at the point of care.</p>
+      <p>She currently leads product for <strong>Canopy</strong>, an in-house EMR built by Oak Street Health for value-based, ambulatory primary care. She joined Canopy as an individual-contributor Product Manager and grew into her current role as Executive Director, Product over almost seven years — scaling the organization from 5 people to more than 40 while staying hands-on with architecture decisions, requirements, and delivery.</p>
+      <p>Along the way she's owned nearly every corner of the platform: early care-coordination tooling for RNs, social workers, and behavioral health teams; medication management; patient access and referrals; and, more recently, the AI/ML models driving risk adjustment and care gap closure. She also built Canopy's Product Operations function from scratch, growing it from a single manager into a six-person team responsible for product analytics, training, and rollout communications org-wide. The case studies below walk through that range in more detail.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="stat-num">13+</div><div class="stat-label">Years in product, healthcare-only</div></div>
+      <div class="stat"><div class="stat-num">5→40+</div><div class="stat-label">Product org scaled at Oak Street Health</div></div>
+      <div class="stat"><div class="stat-num">6X</div><div class="stat-label">Growth in daily active platform use</div></div>
+      <div class="stat"><div class="stat-num">$305M</div><div class="stat-label">Incremental revenue, suspecting model, 2 yrs</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-years">2019 — PRESENT</div>
+        <div class="tl-role">Executive Director, Product</div>
+        <div class="tl-org">Oak Street Health · Chicago, IL (Remote)</div>
+        <div class="tl-desc">Own strategy for Canopy, a proprietary EMR built for value-based primary care. Progressed from Product Manager (2019) through Sr. Product Manager, Director, Sr. Director, to Executive Director (2025). Led risk adjustment, care gap closure, referral coordination, behavioral health/social work tooling, and production AI/ML initiatives.</div>
+        <div class="tl-sub"><div class="tl-sub-role">Product Manager → Sr. PM → Director → Sr. Director → Executive Director</div></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-years">2016 — 2019</div>
+        <div class="tl-role">Product Manager, Engage</div>
+        <div class="tl-org">Pareto Intelligence · Chicago, IL</div>
+        <div class="tl-desc">Owned product strategy for a payor-facing solution using ML-driven predictive models to identify and prioritize high-confidence suspected chronic condition gaps for PCPs.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-years">2013 — 2016</div>
+        <div class="tl-role">Clinical Applications Specialist & Product Manager</div>
+        <div class="tl-org">Picis Clinical Solutions · Rosemont, IL</div>
+        <div class="tl-desc">Translated client and clinical requirements into product designs for Total Perioperative Applications, an EMR for operating room documentation.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-years">2012 — 2013</div>
+        <div class="tl-role">Nurse Manager, Patient Logistics</div>
+        <div class="tl-org">University of Illinois Hospital & Health Sciences System · Chicago, IL</div>
+        <div class="tl-desc">Led bed control and transfer center operations.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-years">2006 — 2013</div>
+        <div class="tl-role">Critical Care Staff Nurse</div>
+        <div class="tl-org">Northwest Community Hospital · Arlington Heights, IL</div>
+        <div class="tl-desc">Pediatric Emergency Department.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2>Case Studies</h2>
+    </div>
+    <p class="case-intro reveal">Products and initiatives owned across nearly seven years at Oak Street Health. Canopy today serves 10,000+ daily active users, with roughly 3,000 interactions per user.</p>
+
+    <div class="case-grid reveal">
+
+      <div class="case-card">
+        <span class="case-tag">AI / ML Strategy</span>
+        <div class="case-title">Suspecting Model</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Owned strategy for a multi-year ML/LLM model surfacing suspected chronic conditions and risk signals for care teams, supporting risk adjustment and care gap closure at scale.</p>
+        <div class="case-metrics"><div><div class="case-metric-num">$305M</div><div class="case-metric-label">Incremental revenue, 2 yrs</div></div></div>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">AI Product Delivery</span>
+        <div class="case-title">eFax Automation</div>
+        <div class="case-role">Hands-on delivery, Director+ oversight</div>
+        <p class="case-desc">Rapid build and delivery of a generative AI system that synthesizes incoming unstructured clinical documents — referrals, records, faxes — into structured, actionable data.</p>
+        <div class="case-metrics">
+          <div><div class="case-metric-num">84%</div><div class="case-metric-label">Automation rate</div></div>
+          <div><div class="case-metric-num">99.8%</div><div class="case-metric-label">Accuracy</div></div>
+          <div><div class="case-metric-num">$3.38M</div><div class="case-metric-label">Annual savings</div></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Patient Access · Cost Strategy</span>
+        <div class="case-title">Referrals &amp; eConsults</div>
+        <div class="case-role">Manager, Product</div>
+        <p class="case-desc">Owned the referrals platform, including an eConsult integration with RubiconMD, and led an eConsult-first strategy to resolve more specialist needs internally.</p>
+        <div class="case-metrics">
+          <div><div class="case-metric-num">-50%</div><div class="case-metric-label">External referrals</div></div>
+          <div><div class="case-metric-num">$11</div><div class="case-metric-label">PMPM saved</div></div>
+          <div><div class="case-metric-num">15%→10%</div><div class="case-metric-label">Medical cost ratio</div></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Care Coordination</span>
+        <div class="case-title">Transitions</div>
+        <div class="case-role">Individual Contributor PM, early tenure</div>
+        <p class="case-desc">Platform for RNs to document and manage care for patients admitted to the hospital, ensuring timely follow-up and continuity after discharge.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Care Coordination</span>
+        <div class="case-title">Tracker</div>
+        <div class="case-role">Individual Contributor PM, early tenure</div>
+        <p class="case-desc">Daily schedule view helping care teams manage day-to-day operations, coordinate within the center, and keep patient throughput on track.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Care Coordination</span>
+        <div class="case-title">Huddle</div>
+        <div class="case-role">Individual Contributor PM, early tenure</div>
+        <p class="case-desc">Replaced a paper-based morning huddle process with a real-time tool for care teams to plan and adjust as their day unfolds.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Care Coordination</span>
+        <div class="case-title">Behavioral Health Platform</div>
+        <div class="case-role">Individual Contributor PM, early tenure</div>
+        <p class="case-desc">Workflow tooling supporting behavioral health clinicians embedded within care teams.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Care Coordination</span>
+        <div class="case-title">Medical Social Worker Platform</div>
+        <div class="case-role">Individual Contributor PM, early tenure</div>
+        <p class="case-desc">Workflow tooling for medical social workers coordinating patient needs and community resources.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Build vs. Buy</span>
+        <div class="case-title">ePrescribing Integration</div>
+        <div class="case-role">Individual Contributor PM</div>
+        <p class="case-desc">Led a hybrid build-vs-buy effort integrating a vendor ePrescribing solution with Canopy — a deceptively complex integration given the accuracy required for medication lists and prescribing safety.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Patient Access</span>
+        <div class="case-title">Inbox / CareRequests</div>
+        <div class="case-role">Manager, Product</div>
+        <p class="case-desc">Owned the queue of patient-initiated needs and requests coming in through the contact center.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Org Leadership</span>
+        <div class="case-title">Product Operations</div>
+        <div class="case-role">Founding lead</div>
+        <p class="case-desc">Built and led the Product Operations function from scratch — product analytics, training materials and org-wide trainings, release announcements, and rollout communications.</p>
+        <div class="case-metrics"><div><div class="case-metric-num">1→6</div><div class="case-metric-label">Team growth</div></div></div>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">AI & Team Enablement</span>
+        <div class="case-title">AI-Enabled Product Practice</div>
+        <div class="case-role">Executive Director, Product</div>
+        <p class="case-desc">Led the product team's adoption of AI into day-to-day work — writing requirements, synthesizing research, and drafting internal materials — raising the speed and consistency of the team's output.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Clinical Documentation</span>
+        <div class="case-title">Patient Chart</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Core longitudinal patient chart underlying every other Canopy workflow.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Clinical Documentation</span>
+        <div class="case-title">Document Review</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Workflow for clinicians to review and sign incoming external documents — labs, imaging, radiology, and admissions records.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Front Desk Ops</span>
+        <div class="case-title">Scheduling</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Patient scheduling module used by front-desk staff to manage appointments.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Clinical Documentation</span>
+        <div class="case-title">Care Planning</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Tooling for care teams to build and maintain patient care plans.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Clinical Documentation</span>
+        <div class="case-title">Actions</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Task and follow-up tracking tooling used by care teams across the platform.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Clinical Documentation</span>
+        <div class="case-title">Orders</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Clinical ordering workflows for care teams.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Clinical Documentation</span>
+        <div class="case-title">Quality</div>
+        <div class="case-role">Director+ oversight</div>
+        <p class="case-desc">Tooling supporting quality measure tracking and reporting across the platform.</p>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Platform Migration</span>
+        <div class="case-title">Canopy → Epic Transition</div>
+        <div class="case-role">Executive Director, Product</div>
+        <p class="case-desc">Leading product-side strategy for OSH's transition from Canopy, the in-house EMR, to Epic — owning workflow parity, migration prioritization, and change management for care teams through a full platform consolidation.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2>Toolkit</h2>
+    </div>
+    <div class="skill-groups reveal">
+      <div class="skill-group">
+        <div class="skill-group-title">AI & Emerging Tech</div>
+        <div class="skill-tags">
+          <span class="skill-tag">LLM Integration</span>
+          <span class="skill-tag">GenAI Strategy</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">Predictive Modeling</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Product Strategy</div>
+        <div class="skill-tags">
+          <span class="skill-tag">SaaS Scaling</span>
+          <span class="skill-tag">GTM</span>
+          <span class="skill-tag">Roadmap Prioritization</span>
+          <span class="skill-tag">Build vs. Buy</span>
+          <span class="skill-tag">Stakeholder Relations</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Data & Informatics</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Clinical Informatics</span>
+          <span class="skill-tag">EMR Design</span>
+          <span class="skill-tag">HL7 / FHIR</span>
+          <span class="skill-tag">NLP Insights</span>
+          <span class="skill-tag">SQL · Tableau</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Execution & Leadership</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Agile / Scrum / SDLC</span>
+          <span class="skill-tag">Usability Testing</span>
+          <span class="skill-tag">UX/UI Partnership</span>
+          <span class="skill-tag">Team Scaling & Mentorship</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="personal">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2>Off Duty</h2>
+    </div>
+    <div class="about-text reveal">
+      <p>Outside of Canopy, Leigha's home team is the real priority — her husband, two daughters (competitive dance and cheer), and their whippet, Blossom. When they're not chasing a competition schedule, you'll find her deep in a home improvement project, cooking, or unwinding with an audiobook.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">06</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact reveal">
+      <p class="contact-line">Open to product leadership conversations in healthcare and health tech — reach out any time.</p>
+      <div class="contact-links">
+        <a href="mailto:Leigha.Grimm@gmail.com">Leigha.Grimm@gmail.com</a>
+        <a href="https://www.linkedin.com/in/leigha-grimm" target="_blank" rel="noopener">linkedin.com/in/leigha-grimm</a>
+        <span style="font-family:var(--mono);font-size:13.5px;color:var(--body-text);">Chicago Area, IL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>LEIGHA GRIMM RN, MSN — PRODUCT LEADER</p>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) {
+    revealEls.forEach(el => el.classList.add('in'));
+  } else if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // copy email to clipboard as a fallback for mailto links (works whether or not
+  // a default mail client is configured on the visitor's machine)
+  let toastEl = null;
+  let toastTimer = null;
+  function showToast(msg) {
+    if (!toastEl) {
+      toastEl = document.createElement('div');
+      toastEl.className = 'copy-toast';
+      document.body.appendChild(toastEl);
+    }
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2200);
+  }
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+    link.addEventListener('click', function () {
+      const email = this.href.replace('mailto:', '').split('?')[0];
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email)
+          .then(() => showToast('Copied ' + email + ' to clipboard'))
+          .catch(() => showToast(email));
+      } else {
+        showToast(email);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
