@@ -125,6 +125,18 @@
   .case-metric-num{font-family:var(--mono);font-size:16px;color:var(--signal);font-weight:500;}
   .case-metric-label{font-size:11px;color:var(--body-text);}
 
+  /* AI BUILD FEATURE CARD */
+  .feature-card{background:var(--card);border:1px solid var(--line);display:grid;grid-template-columns:1.15fr 1fr;overflow:hidden;}
+  .feature-media{background:var(--tag-bg);overflow:hidden;}
+  .feature-media img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;min-height:280px;}
+  .feature-body{padding:34px 32px;display:flex;flex-direction:column;gap:14px;justify-content:center;}
+  .feature-title{font-family:var(--serif);font-weight:600;font-size:24px;color:var(--ink);}
+  .feature-desc{font-size:14.5px;}
+  .feature-meta{font-family:var(--mono);font-size:12.5px;color:var(--body-text);}
+  .feature-meta-label{color:var(--accent-warm);text-transform:uppercase;letter-spacing:0.05em;margin-right:6px;}
+  .feature-body .btn{align-self:flex-start;margin-top:6px;}
+  @media (max-width:760px){ .feature-card{grid-template-columns:1fr;} .feature-media img{min-height:220px;} }
+
   /* SKILLS */
   .skill-groups{display:grid;grid-template-columns:1fr 1fr;gap:32px 40px;}
   @media (max-width:640px){ .skill-groups{grid-template-columns:1fr;} }
@@ -419,10 +431,33 @@
   </div>
 </section>
 
-<section id="skills">
+<section id="ai-build">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="section-num">04</span>
+      <h2>Built With AI</h2>
+    </div>
+    <p class="case-intro reveal">Beyond strategy — a working prototype designed and built hands-on, start to finish, using AI-assisted development tools.</p>
+
+    <div class="feature-card reveal">
+      <div class="feature-media">
+        <img src="intake-hub-screenshot-v2.png" alt="Screenshot of the Intelligent Intake Hub interface, showing a smart document queue with AI confidence scores, a multi-patient document split analysis panel, AI-extracted patient data, and an approve-to-EMR action.">
+      </div>
+      <div class="feature-body">
+        <span class="case-tag">Hands-On AI Prototyping</span>
+        <div class="feature-title">Intelligent Intake Hub</div>
+        <p class="feature-desc">An AI-powered document intake and triage interface for clinical fax and referral processing — designed and built solo, end to end. Includes a smart queue with AI confidence scoring, automatic multi-patient document splitting, an AI-extracted data review panel, and an approve-to-EMR action flow.</p>
+        <div class="feature-meta"><span class="feature-meta-label">Tools</span>VS Code · Claude Code</div>
+        <a href="https://leighagrimm-web.github.io/intake-hub/" target="_blank" rel="noopener" class="btn btn-primary">View live prototype →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
       <h2>Toolkit</h2>
     </div>
     <div class="skill-groups reveal">
@@ -471,7 +506,7 @@
 <section id="personal">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="section-num">05</span>
+      <span class="section-num">06</span>
       <h2>Off Duty</h2>
     </div>
     <div class="about-text reveal">
@@ -483,7 +518,7 @@
 <section id="contact">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="section-num">06</span>
+      <span class="section-num">07</span>
       <h2>Contact</h2>
     </div>
     <div class="contact reveal">
